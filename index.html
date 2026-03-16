@@ -1,31 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q3 PROJECT</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>PC Tech Solutions</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="container">
-<h2> Member Sign-Up </h2>
-<h2>Student Details</h2>
-<label for="Fullname">Fullname:</label>
-<input type="text" id="fullname" name="fullname">
-<h2>Ticket Selection</h2>
-<lablel for="Ticket Qty"></lable;>
-<input type=" number" id="ticket qty" name=" ticket">
-<h2>Payment Details></h2>
-t<p>Subtotal: ₱ <span id="subtotal">0</span></p>
-<p>Admin Fee: ₱ <span id="admin">50</span></p>
-<p class="total">Total: ₱ <span id="total">0</span></p>
 
-<!-- Button Event -->
-<button class="btn btn-info w-100" onclick="computeTotal()">
-Complete Registration
-</button>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="logo">PC TECH SOLUTIONS</div>
+    <div class="promo">PROMO</div>
+  </header>
 
-<br><br>>
+  <!-- Main Card -->
+  <main class="container">
 
+    <div class="card">
+      <h2>Want a super cool laptop? </h2>
+      <p>Enter your budget to find the right one!</p>
+
+      <input
+        id="budgetInput"
+        type="number"
+        placeholder="Enter budget"
+        value="70000"
+      />
+
+      <div class="buttons">
+        <button onclick="showBrands()">Brand & Discounts</button>
+        <button onclick="showStore()">Store Location</button>
+      </div>
+    </div>
+
+    <!-- Bottom Panels -->
+    <div class="panels">
+
+      <!-- Brands -->
+      <div class="panel" id="brandPanel">
+        <h3>Recommended Brands:</h3>
+
+        <div class="tags">
+          <span>Acer</span>
+          <span>Asus</span>
+          <span>Lenovo</span>
+        </div>
+
+        <div class="discount">
+          Eligible Discount <span id="discountValue">14000.00</span>
+        </div>
+      </div>
+
+      <!-- Store Locations -->
+      <div class="panel" id="storePanel">
+        <img src="file:///C:/Users/Helena%20Magsino/Downloads/VillMan_whitered.webp" />
+
+        <ul>
+          <li>Quezon City — SM North EDSA, Trinoma</li>
+          <li>Mandaluyong — SM Megamall</li>
+          <li>San Juan — Greenhills</li>
+          <li>Taguig — Market! Market!</li>
+          <li>Makati — Glorietta 2, One Ayala</li>
+          <li>Pasay — SM Mall of Asia</li>
+          <li>Marikina — SM Marikina</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>© 2026 PC Tech Solutions. All rights reserved.</footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
